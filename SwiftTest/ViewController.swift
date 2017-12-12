@@ -50,13 +50,13 @@ class ViewController: UIViewController {
         
         let lineWidth = 5
         
-        var value: Double = 95
+        var value: Double = 0
         
-//        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
-//            value = value + 2
-//            if value > 100 {
-//                timer.invalidate()
-//            }
+        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
+            value = value + 2
+            if value > 100 {
+                timer.invalidate()
+            }
         
             let points: [CGPoint] = self.getPointsForValue(value: value, with: CGFloat(lineWidth), and: self.progressView.bounds)
             print("\n\n Value: \(value), Points: \(points)")
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
             }
             
             shapeLayer.path = bezierPath.cgPath
-//        }
+        }
     }
     
     func getPointsForValue(value: Double, with lineWidth: CGFloat, and frame: CGRect) -> [CGPoint] {
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
             points.append(CGPoint(x: x, y: y))
         } else if Double(actualValue) >= 0 {
             x = Double(frame.width) * (Double(actualValue) + 12.5) / 25
-            points.append(CGPoint(x: x, y: y))
+            points.append(CGPoint(x: x , y: y))
         }
         
         if Double(actualValue) >= (12.5 + 25) {
@@ -113,6 +113,7 @@ class ViewController: UIViewController {
         }
         
         if Double(actualValue) >= (12.5 + 75) {
+            x = 0
             y = 0
             points.append(CGPoint(x: x, y: y))
         } else if Double(actualValue) > (12.5 + 50) {
@@ -120,13 +121,27 @@ class ViewController: UIViewController {
             points.append(CGPoint(x: x, y: y))
         }
         
-        //Add points for inner line which eventually creates a closed area
-        
-        x = Double(lineWidth)
-        if Double(actualValue) >= (12.5 + 75) {
+        if Double(actualValue) >= 87.5 {
+            x = Double(frame.width) * (Double(actualValue) - 87.5) / 25
             y = 0
             points.append(CGPoint(x: x, y: y))
+        }
+        
+        //Add points for inner line which eventually creates a closed area
+        
+        
+        if Double(actualValue) >= 87.5 {
+            x = Double(frame.width) * (Double(actualValue) - 87.5) / 25
+            y = Double(lineWidth)
+            points.append(CGPoint(x: x, y: y))
+        }
+        
+        if Double(actualValue) >= (12.5 + 75) {
+            x = Double(lineWidth)
+            y = Double(lineWidth)
+            points.append(CGPoint(x: x, y: y))
         } else if Double(actualValue) > (12.5 + 50) {
+            x = Double(lineWidth)
             y = Double(frame.height) * (25 - (Double(actualValue) - (12.5+25+25))) / 25
             points.append(CGPoint(x: x, y: y))
         }
