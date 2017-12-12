@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		531396731FDABE33000BDA07 /* Pop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 531396751FDABE33000BDA07 /* Pop.xib */; };
 		53DB0BE01FDA62AB0073A02E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB0BDF1FDA62AB0073A02E /* AppDelegate.swift */; };
 		53DB0BE21FDA62AB0073A02E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB0BE11FDA62AB0073A02E /* ViewController.swift */; };
 		53DB0BE51FDA62AB0073A02E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DB0BE31FDA62AB0073A02E /* Main.storyboard */; };
 		53DB0BE81FDA62AB0073A02E /* SwiftTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53DB0BE61FDA62AB0073A02E /* SwiftTest.xcdatamodeld */; };
 		53DB0BEA1FDA62AB0073A02E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DB0BE91FDA62AB0073A02E /* Assets.xcassets */; };
 		53DB0BED1FDA62AB0073A02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DB0BEB1FDA62AB0073A02E /* LaunchScreen.storyboard */; };
+		53DB0BF91FDA630B0073A02E /* Pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB0BF81FDA630B0073A02E /* Pop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		531396771FDABE48000BDA07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Pop.xib; sourceTree = "<group>"; };
 		53DB0BDC1FDA62AB0073A02E /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DB0BDF1FDA62AB0073A02E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53DB0BE11FDA62AB0073A02E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		53DB0BE91FDA62AB0073A02E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53DB0BEC1FDA62AB0073A02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53DB0BEE1FDA62AB0073A02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DB0BF81FDA630B0073A02E /* Pop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				53DB0BDF1FDA62AB0073A02E /* AppDelegate.swift */,
 				53DB0BE11FDA62AB0073A02E /* ViewController.swift */,
 				53DB0BE31FDA62AB0073A02E /* Main.storyboard */,
+				53DB0BF81FDA630B0073A02E /* Pop.swift */,
+				531396751FDABE33000BDA07 /* Pop.xib */,
 				53DB0BE91FDA62AB0073A02E /* Assets.xcassets */,
 				53DB0BEB1FDA62AB0073A02E /* LaunchScreen.storyboard */,
 				53DB0BEE1FDA62AB0073A02E /* Info.plist */,
@@ -129,6 +135,7 @@
 				53DB0BED1FDA62AB0073A02E /* LaunchScreen.storyboard in Resources */,
 				53DB0BEA1FDA62AB0073A02E /* Assets.xcassets in Resources */,
 				53DB0BE51FDA62AB0073A02E /* Main.storyboard in Resources */,
+				531396731FDABE33000BDA07 /* Pop.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,12 +149,21 @@
 				53DB0BE81FDA62AB0073A02E /* SwiftTest.xcdatamodeld in Sources */,
 				53DB0BE21FDA62AB0073A02E /* ViewController.swift in Sources */,
 				53DB0BE01FDA62AB0073A02E /* AppDelegate.swift in Sources */,
+				53DB0BF91FDA630B0073A02E /* Pop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		531396751FDABE33000BDA07 /* Pop.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				531396771FDABE48000BDA07 /* en */,
+			);
+			name = Pop.xib;
+			sourceTree = "<group>";
+		};
 		53DB0BE31FDA62AB0073A02E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -303,6 +319,7 @@
 				53DB0BF31FDA62AB0073A02E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
